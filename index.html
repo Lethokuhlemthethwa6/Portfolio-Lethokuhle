@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lethokuhle's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lethokuhle Nothando Mthethwa</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showTab('about')">About</a></li>
+        <li><a href="#" onclick="showTab('skills')">Skills</a></li>
+        <li><a href="#" onclick="showTab('projects')">Projects</a></li>
+        <li><a href="#" onclick="showTab('interests')">Interests</a></li>
+        <li><a href="#" onclick="showTab('education')">Educational Background</a></li>
+        <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main> <section id="home" class="tab active home-cover">
+  <div class="home-content">
+    <h1>Lethokuhle's Portfolio</h1>
+    <p>Welcome to my digital space</p>
+    <button class="btn" onclick="showTab('about')">Enter Site</button>
+  </div>
+</section>
+
+    <section id="about" class="tab">
+      <h2>About Me</h2>
+      <img src="profile.picture.jpg" alt="Profile Picture" class="profile-pic" />
+      <p>Howzit! I'm Lethokuhle, a passionate and determined individual currently diving into the tech world through PLP Academy. I have a background in admin and creative design, and I'm now expanding my skills in programming, web development, and version control.</p>
+      <p>What drives me is the opportunity to solve real-world problems through technology. I’m curious, creative, and always ready to learn something new especially when it challenges me to grow.</p>
+    </section>
+
+    <section id="skills" class="tab">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>Git & GitHub</li>
+        <li>JavaScript (in progress)</li>
+        <li>Python (beginner)</li>
+        <li>Microsoft Office Suite</li>
+        <li>Regulatory & Compliance Knowledge</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="tab">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Project 1: Personal Blog</h3>
+        <p>A responsive blog built with HTML & CSS</p>
+        <p>Coming soon: Cool things I'm building at PLP </p>
+      </div>
+    </section>
+
+    <section id="interests" class="tab">
+      <h2>Interests</h2>
+      <p>I’m passionate about building meaningful tech solutions and learning how digital tools can improve everyday life. I love exploring front-end development, discovering new ways to solve problems with code, and keeping up with trends like AI and web accessibility. I’m especially interested in tech that helps communities and supports social change.</p>
+    </section>
+
+    <section id="education" class="tab">
+      <h2>Educational Background</h2>
+      <p>I completed <strong>Grade 12</strong> in 2016.</p>
+      <p>I obtained a <strong>N6 Financial Management Certificate</strong> in 2019.</p>
+      <p>I hold a <strong>RE5 Certificate</strong> that I obtained in July 2025.</p>
+      <p>I’m currently enrolled in a tech course at <strong>PLP Academy</strong>, learning web dev, Git, and teamwork.</p>
+      <p>Previously, I gained practical experience in admin and design, and was recognised for critical thinking, organisation, and creativity.</p>
+      <p><a href="lethokuhle-cv.pdf" download>📄 Download My CV</a></p>
+    </section>
+
+    <section id="contact" class="tab">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:lethokuhlemthethwa6@gmail.com">lethokuhlemthethwa6@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lethokuhle-m-5b29801b9" target="_blank">My LinkedIn Profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hope to hear from you soon!</p>
+    <p>&copy; Lethokuhle <div id="" class=""></div>All rights reserved</p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      const activeTab = document.getElementById(tabId);
+      if (activeTab) {
+        activeTab.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
+
+ 
